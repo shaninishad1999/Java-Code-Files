@@ -1,30 +1,23 @@
-import java.util.Scanner;
+public class Task_5 {
+    public static void main(String[] args) {
+        String original = "Java";
+        char[] charArray = original.toCharArray();
 
-class Task_5 {
-    public static void main(String args[]) {
+       
+        char temp = charArray[0];
+        charArray[0] = charArray[1];
+        charArray[1] = temp;
 
-        Scanner obj = new Scanner(System.in);
+      
+        temp = charArray[2];
+        charArray[2] = charArray[3];
+        charArray[3] = temp;
 
-        System.out.print("Input custom string: ");
-        String str = obj.nextLine();
-     StringBuilder evenChars = new StringBuilder();
-        StringBuilder oddChars = new StringBuilder();
-	
-	char[] ch = str.toCharArray();
-	for(int i=0;i<ch.length;i++)
-	{
-	 if(i%2==0)
-	{
-	evenChars.append(ch[i]);
-	}
-	else
-	{
-	oddChars.append(ch[i]);
-	}
-	
-	}
-  StringBuilder rearrangedString = evenChars.append(oddChars);
-System.out.println("After = "+rearrangedString.toString());
-        
+
+        String swapped = new String(charArray);
+
+        // Print the result
+        System.out.println("Original string: " + original);
+        System.out.println("Swapped string: " + swapped);
     }
 }
