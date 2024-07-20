@@ -1,23 +1,19 @@
-public class Task_5 {
-    public static void main(String[] args) {
-        String original = "Java";
-        char[] charArray = original.toCharArray();
+import java.util.Scanner;
+class Task_5{
 
-       
-        char temp = charArray[0];
-        charArray[0] = charArray[1];
-        charArray[1] = temp;
+public static void main(String args[]){
 
-      
-        temp = charArray[2];
-        charArray[2] = charArray[3];
-        charArray[3] = temp;
+	Scanner obj=new Scanner(System.in);
+	System.out.print("Enter String : ");
+	String str=obj.nextLine();
 
-
-        String swapped = new String(charArray);
-
-        // Print the result
-        System.out.println("Original string: " + original);
-        System.out.println("Swapped string: " + swapped);
-    }
+	 char[] chars = str.toCharArray();
+   	for (int i = 0; i < chars.length - 1; i += 2) {
+            	char temp = chars[i];
+            	chars[i] = chars[i + 1];
+           	 chars[i + 1] = temp;
+        }
+	System.out.println(chars);
+	
+}
 }
