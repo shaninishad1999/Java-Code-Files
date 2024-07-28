@@ -6,51 +6,53 @@ public class PrimeNumber {
 
         // checking prime number
 
-        // System.out.println("Enter Number ");
+        System.out.println("Enter Number ");
 
-        // int n = obj.nextInt();
-        // int f = 0;
+        int n = obj.nextInt();
+        int f = 0;
 
-        // for (int i = 1; i <= n; i++) {
-        // if (n % i == 0) {
+        for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
 
-        // f++;
+        f++;
 
-        // }
+        }
 
-        // }
-        // if (f == 2) {
-        // System.out.println("It is Prime Number");
-        // } else {
-        // System.out.println("It is Composite Number");
-        // }
+        }
+        if (f == 2) {
+        System.out.println("It is Prime Number");
+        } else {
+        System.out.println("It is Composite Number");
+        }
+    }
 
+}
 
         // print array list of give number
 
-        System.out.println("Enter Starting number ");
-        int m = obj.nextInt();
+        // System.out.println("Enter Starting number ");
+        // int m = obj.nextInt();
 
-        System.out.println("Enter Ending number ");
-        int n = obj.nextInt();
+        // System.out.println("Enter Ending number ");
+        // int n = obj.nextInt();
 
-        int count;
+        // int count;
 
-        for (int i = m; i <= n; i++) {
-            count = 0;
+        // for (int i = m; i <= n; i++) {
+        //     count = 0;
 
-            // Check for divisibility from 2 up to i/2
-            for (int j = 2; j <= i / 2; j++) {
-                if (i % j == 0) {
-                    count++; // Increment if 'i' is divisible by 'j'
-                    break; // Exit loop if a divisor is found
-                }
-            }
+        //     // Check for divisibility from 2 up to i/2
+        //     for (int j = 2; j <= i / 2; j++) {
+        //         if (i % j == 0) {
+        //             count++; // Increment if 'i' is divisible by 'j'
+        //             break; // Exit loop if a divisor is found
+        //         }
+        //     }
 
-            if (count == 0) {
-                System.out.println(i); // Output the prime number
-            }
-        }
+        //     if (count == 0) {
+        //         System.out.println(i); // Output the prime number
+        //     }
+        // }
 
 
 
